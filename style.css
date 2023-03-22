@@ -1,3 +1,7 @@
+body {
+    background: #f7f3f3;
+}
+
 /* header section style  */
 .header {
     display: flex;
@@ -31,38 +35,136 @@ ul li {
 }
 
 /* section style */
-.first-body{
+.first-body {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 65px 200px;
 }
 
-.text-part{
-    
-    padding:20px     ;
+.text-part {
+
+    padding: 20px;
     margin-left: 120px;
     margin-right: 100px;
     margin-bottom: 0px;
 }
-.text-part-tittle{
+
+.text-part-tittle {
     font-size: 60px;
     border-bottom: 100px;
 
 }
 
-.button{
+.button {
     background-color: rgb(255, 0, 234);
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     color: white;
 }
+
 img {
-   background-color: rgb(250, 248, 244);
-   border-radius: 200px;
-   
+    background-color: rgb(250, 248, 244);
+    border-radius: 200px;
+
 }
-hr{
-    width: 70%;   
+
+hr {
+    width: 70%;
+}
+
+/* logos style  */
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 250px;
+}
+
+/* popular collection styles */
+
+.collection-title {
+    margin-top: 150px;
+    
+    text-align: center;
+    font-weight: 500;
+font-size: 28px;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px ;
+    margin-bottom: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.collection {
+    background-color: #ffffff;
+    margin: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.banner {
+    width: 300px;
+height: 256px;
+}
+
+.fa-star {
+    color: #FB8200;
+}
+
+.fa-star-half {
+    color: #FB8200;
+}
+.see{
+    text-align: right;
+    margin-right: 180px;
+}
+
+/* final */
+.final{
+    text-align: center;
+    background-color: rgba(2, 2, 70, 0.918);
+    color: #ffffff;
+    padding: 70px;
+}
+@media screen and (max-width:576px) {
+   
+    .flex{
+        display: none;
+    }
+    .first-body{
+        flex-direction: column-reverse;
+        
+    }
+    .logos{
+       display: flex;
+        
+    
+        flex-wrap: wrap;
+        margin: 50px;
+    }
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+    }
+    .collection {
+        background-color: #ffffff;
+        margin: 20px;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-right: 30px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+    }
+        
+    
 }
